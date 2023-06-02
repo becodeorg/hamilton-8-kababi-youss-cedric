@@ -1,0 +1,45 @@
+
+.Team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $colorc;
+    height: 800px;
+    h1{
+        font-family: $fonth1;
+        font-size: 120px;
+        color: azure;
+        position: relative;
+        opacity:5%;
+        margin-top: 10px;
+        margin-bottom: 0;
+        float: left;
+
+    }
+    h2{
+        font-family: $fonth2;
+        color:white;
+        font-size: 24px;
+
+    }
+    h4{
+        font-family: $fonth4;
+        font-style: italic;
+        color: white;
+        font-size: 16px;
+        margin:0;
+
+    }
+    .gallery{
+        height: 1800px;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        align-items: center;
+        justify-items: center;
+        gap:25px;
+        margin-left: 50px;
+        margin-right: 50px;
+        
+    
+    }
+}
