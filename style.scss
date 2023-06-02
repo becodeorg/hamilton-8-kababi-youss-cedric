@@ -2,54 +2,130 @@
 @import "./mixin/mixin.scss";
 @import "./extend/extend.scss";
 
-
-@font-face {
-    font-family: fa-brand;
-    src: url(./font/fa-brands-400.woff2);
-  }
-  @font-face {
-    font-family: fa-light;
-    src: url(./font/fa-light-300.woff2);
-  }
-  @font-face {
-    font-family: fa-regular;
-    src: url(./font/fa-regular-400.woff2);
-  }
-  @font-face {
-    font-family: fa-solid;
-    src: url(./font/fa-solid-900.woff2);
-  }
-  
   body{
       margin: 0;
   }
   
+
   header{
-      background-image: url("./img/slider/img_bg_slider_home01.jpg");
+
+    background-image:
+    linear-gradient(90deg, rgba(0,0,0,1) 41%, rgba(0,212,255,0) 100%),
+    url("./img/slider/img_bg_slider_home01.jpg");
+    background-repeat: no-repeat;   
+    background-size: 100% 100%;
+    
+
+    navbar{
+        color: $colora;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2.5rem 5rem;
+        font-size: 1.5rem;
+        align-items: center;
+        font-family: 'Open Sans', sans-serif;
+        
+        img{
+        height: 3.5rem;
+        width: auto;              
+        }
+        ul{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+            li{
+            list-style-type: none;
+            }
+        }
+        p{
+        margin-left: 30rem; 
+            i{
+                color: $colord;
+            }
+        }
+        .button{
+        text-decoration: none;
+        color: white;
+        background-color: $colord;
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        align-items: center;
+        font-size: 1.2rem;
+        
+        i{
+            font-size: 1.2rem;
+        }
+        }
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding-right: 60rem;
+        padding-left: 10rem;
+        padding-bottom: 10rem;
+        img{
+            height: 10rem;
+            width: 10rem;
+            padding-bottom: 0;
+            position: absolute;
+            top: 12rem;
+            left: 35rem;
+          
+        }
+        h1{
+            font-size: 9rem;
+            margin-top: 5rem;
+            position: relative;
+            font-family: 'Cinzel', serif;
+            font-weight: 550;
+            line-height: 9rem;
+        }
+        .button{
+            text-decoration: none;
+            color: white;
+            background-color: none;
+            border: 0.15rem grey solid;
+            padding: 1rem 1rem 1rem 2rem;
+            border-radius: 1rem;
+            font-weight: 800;
+            align-items: center;
+            margin-right: 34rem;
+
+        }
+    }
   }
-  header{
-      navbar{
-          color: $colora;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          padding: 2.5rem 5rem 0 5rem;
-          font-size: 1.5rem;
-          font-family: fa-brand;
-              
-              img{
-                  height: 3.5rem;
-                  width: auto;
-                  
-              }
-              ul{
-                  display: flex;
-                  flex-direction: row;
-                  gap: 3rem;
-                  li{
-                      list-style-type: none;
-                  }
-              }
-  
-          }
-  }
+
+.cat{
+    background-image: radial-gradient(circle, rgba(75,104,255,1) 0%, rgba(200,169,106,0.1) 0%), url("./img/banner/imgbgcategory.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem 2rem 50rem 2rem;
+    h2{
+        font-size: 3rem;
+        padding-top: 4rem;
+        font-family: 'Frank Ruhl Libre', serif;
+        font-weight: 200;
+        opacity: .6;
+        margin-bottom: 1rem;
+    }
+    h4{
+        margin-top: 0;
+        font-size: 1.5rem;
+        font-weight: 100;
+        opacity: .8;
+    }
+    div{
+        display: flex;
+        flex-direction: row;
+        
+        .category{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
