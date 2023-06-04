@@ -44,6 +44,22 @@ footer .bloc1 .contact ul {
   list-style: none;
 }
 
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blog .blog_article {
+  display: flex;
+}
+.blog .blog_article article p {
+  display: block;
+  color: #1F1F1F;
+}
+.blog .brand {
+  display: flex;
+}
+
 body {
   margin: 0;
 }
