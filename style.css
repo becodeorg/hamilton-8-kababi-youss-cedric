@@ -140,7 +140,8 @@ footer .bloc1 .contact ul {
   flex-direction: column;
   align-items: center;
   color: #1F1F1F;
-  margin: 3rem;
+  padding: 3rem;
+  margin: 0;
   font-family: "Cinzel", serif;
 }
 .blog .blog_article article a {
