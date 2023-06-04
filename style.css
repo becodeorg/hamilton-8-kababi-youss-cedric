@@ -5,7 +5,7 @@ body {
 header {
   background-image: linear-gradient(90deg, rgb(0, 0, 0) 41%, rgba(0, 212, 255, 0) 100%), url("./img/slider/img_bg_slider_home01.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 header navbar {
   color: white;
@@ -35,7 +35,7 @@ header navbar p {
 header navbar p i {
   color: #C8A96A;
 }
-header navbar .button {
+header navbar .buttonn {
   text-decoration: none;
   color: white;
   background-color: #C8A96A;
@@ -45,74 +45,362 @@ header navbar .button {
   align-items: center;
   font-size: 1.2rem;
 }
-header navbar .button i {
+header navbar .buttonn i {
   font-size: 1.2rem;
 }
-header div {
-  display: flex;
+header div.accueil {
+  display: grid;
   flex-direction: column;
   color: white;
-  padding-right: 60rem;
-  padding-left: 10rem;
-  padding-bottom: 10rem;
+  margin: 2rem 60rem 0 15rem;
+  padding-bottom: 8rem;
 }
-header div img {
+header div.accueil .card__thumb,
+header div.accueil .card__content {
+  grid-area: 1/-1;
+}
+header div.accueil img {
   height: 10rem;
   width: 10rem;
-  padding-bottom: 0;
-  position: absolute;
-  top: 12rem;
-  left: 35rem;
+  padding: 3rem 0 0 27rem;
 }
-header div h1 {
+header div.accueil h1 {
   font-size: 9rem;
-  margin-top: 5rem;
-  position: relative;
   font-family: "Cinzel", serif;
   font-weight: 550;
   line-height: 9rem;
+  line-height: 10rem;
 }
-header div .button {
+header div.accueil .buttona {
   text-decoration: none;
   color: white;
   background-color: none;
   border: 0.15rem grey solid;
-  padding: 1rem 1rem 1rem 2rem;
+  padding: 1rem 1rem 1rem 1rem;
   border-radius: 1rem;
   font-weight: 800;
   align-items: center;
-  margin-right: 34rem;
+  margin-right: 28rem;
 }
 
-.cat {
+section.cat {
   background-image: radial-gradient(circle, rgb(75, 104, 255) 0%, rgba(200, 169, 106, 0.1) 0%), url("./img/banner/imgbgcategory.jpg");
   background-repeat: no-repeat;
-  display: flex;
+  display: grid;
   flex-direction: column;
   text-align: center;
-  padding: 5rem 2rem 50rem 2rem;
+  padding: 5rem 2rem 40rem 2rem;
+  background-size: 110%;
+  background-position: 50% -10%;
 }
-.cat h2 {
-  font-size: 3rem;
-  padding-top: 4rem;
-  font-family: "Frank Ruhl Libre", serif;
-  font-weight: 200;
-  opacity: 0.6;
-  margin-bottom: 1rem;
+section.cat .card__thumb,
+section.cat .card__content {
+  grid-area: 1/-1;
 }
-.cat h4 {
+section.cat h2 {
+  text-align: center;
+  padding: 6rem 0 0 0;
+  margin: 0;
+  font-size: 4rem;
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+section.cat h4 {
+  text-align: center;
   margin-top: 0;
   font-size: 1.5rem;
   font-weight: 100;
   opacity: 0.8;
+  margin-bottom: 6rem;
 }
-.cat div {
+section.cat h3 {
+  opacity: 0.1;
+  font-size: 16rem;
+  color: #C8A96A;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  float: left;
+  margin-right: 5rem;
+}
+section.cat .choix {
   display: flex;
   flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
 }
-.cat div .category {
+section.cat .choix .category {
+  margin-top: 5rem;
+  background-color: white;
+  padding: 2rem;
+  color: #C8A96A;
+  font-size: 2rem;
+}
+section.cat .choix .category i {
+  color: #C8A96A;
+}
+section.cat .choix .category img {
+  height: 3rem;
+  width: auto;
+  padding-bottom: 0;
+  padding-top: 1rem;
+}
+
+section .gallery {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 5rem;
+}
+section .gallery .ga {
+  height: 25rem;
+  width: auto;
+}
+section .gallery .gb {
+  height: 50rem;
+  width: auto;
+  position: relative;
+  top: -20rem;
+}
+section .gallery .gc {
+  height: 20rem;
+  width: auto;
+}
+
+section.about-us {
+  margin-bottom: 10rem;
+}
+section.about-us .st {
+  display: grid;
+  flex-direction: column;
+}
+section.about-us .st .card__thumb,
+section.about-us .st .card__content {
+  grid-area: 1/-1;
+}
+section.about-us h2 {
+  text-align: center;
+  padding: 6rem 0 0 0;
+  margin: 0;
+  font-size: 4rem;
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+section.about-us h4 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 100;
+  opacity: 0.8;
+  margin-bottom: 6rem;
+}
+section.about-us h3 {
+  opacity: 0.1;
+  font-size: 16rem;
+  color: #C8A96A;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  float: left;
+  margin-right: 5rem;
+}
+section.about-us .aui {
+  height: 12rem;
+  width: auto;
+  padding: 8rem 0 0 20rem;
+}
+section.about-us .serv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 30rem 0 27rem;
+  align-items: center;
+  gap: 5rem;
+}
+section.about-us .serv .a img {
+  height: 43rem;
+  width: auto;
+}
+section.about-us .serv .b {
+  font-size: 2.1rem;
+  font-family: "Cinzel", serif;
+  justify-content: left;
+  font-weight: 500;
+}
+section.about-us .serv .b p {
+  margin-bottom: 3rem;
+}
+section.about-us .serv .b a {
+  background-color: #C8A96A;
+  text-decoration: none;
+  color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+section.offer {
+  background-color: #FAF7F0;
+  background-image: url(./img/our-menu/img2bg-our-menu.jpg), url(./img/our-menu/imgbg-our-menu.jpg);
+  background-position: left 45rem, right;
+  background-size: auto, 47rem 100%;
+  background-size: nul, contain;
+  background-repeat: no-repeat, no-repeat;
+  padding: 10rem 0;
+}
+section.offer .offer_title {
+  display: grid;
+  flex-direction: column;
+}
+section.offer .offer_title .bckg_title,
+section.offer .offer_title .title {
+  grid-area: 1/-1;
+}
+section.offer .offer_title h2 {
+  text-align: center;
+  padding: 6rem 30rem 0 0;
+  margin: 0;
+  font-size: 4rem;
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+section.offer .offer_title h4 {
+  text-align: center;
+  padding-right: 30rem;
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 100;
+  opacity: 0.8;
+  margin-bottom: 6rem;
+}
+section.offer .offer_title h3 {
+  opacity: 0.1;
+  font-size: 16rem;
+  color: #C8A96A;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  float: left;
+  margin-right: 5rem;
+}
+section.offer .grid_menu {
+  display: grid;
+  grid-template: auto auto auto auto/auto auto;
+  justify-content: center;
+  row-gap: 1rem;
+  column-gap: 1rem;
+  padding-top: 2rem;
+}
+section.offer .grid_menu div.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5rem 1rem;
+  gap: 6rem;
+  background-color: white;
+  font-size: 1.5rem;
+  font-family: "Cinzel", serif;
+  border-radius: 2rem;
+  font-weight: 500;
+  line-height: 1rem;
+}
+section.offer .grid_menu div.card .price {
+  color: #C8A96A;
+  font-size: 3rem;
+}
+
+section.r_gallery {
+  background-image: url(./img/our-menu/img2bg-our-menu.jpg);
+  background-size: 14.1rem auto;
+  background-repeat: no-repeat;
+  background-position: top -31.1rem left;
+}
+section.r_gallery .rg_title {
+  display: grid;
+  flex-direction: column;
+}
+section.r_gallery .rg_title .bckg_title,
+section.r_gallery .rg_title .title {
+  grid-area: 1/-1;
+}
+section.r_gallery .rg_title h2 {
+  text-align: center;
+  padding: 6rem 0 0 0;
+  margin: 0;
+  font-size: 4rem;
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+section.r_gallery .rg_title h4 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 100;
+  opacity: 0.8;
+  margin-bottom: 6rem;
+}
+section.r_gallery .rg_title h3 {
+  opacity: 0.1;
+  font-size: 16rem;
+  color: #C8A96A;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  float: left;
+  margin-right: 5rem;
+}
+section.r_gallery .rg_grid {
+  display: grid;
+  grid-template: auto auto/auto auto auto auto;
+  justify-content: center;
+  gap: 2rem;
+  margin-right: 10rem;
+  padding-bottom: 2rem;
+}
+section.r_gallery .rg_grid .a {
+  grid-column: col 1/span 2;
+  grid-row: row 1;
+}
+section.r_gallery .rg_grid .b {
+  grid-column: col 3/span 1;
+  grid-row: row 1;
+}
+section.r_gallery .rg_grid .c {
+  grid-column: col 4/span 1;
+  grid-row: row 1;
+}
+section.r_gallery .rg_grid .d {
+  grid-column: col 1/span 1;
+  grid-row: row 2;
+}
+section.r_gallery .rg_grid .e {
+  grid-column: col 2/span 1;
+  grid-row: row 2;
+}
+section.r_gallery .rg_grid .f {
+  grid-column: col 3/span 2;
+  grid-row: row 2;
+}
+section.r_gallery .button {
+  text-decoration: none;
+  color: black;
+  background-color: none;
+  border: 0.15rem rgba(128, 128, 128, 0.171) solid;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 800;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 56rem;
 }
 
 /*# sourceMappingURL=style.css.map */
