@@ -4,8 +4,8 @@
 
 body{
     margin: 0;
+    width: 100%;
 }
-
 
 header{
 
@@ -19,7 +19,7 @@ background-size: cover;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 2.5rem 5rem;
+        padding: 2.5rem 5rem 0 5rem;
         font-size: 1.5rem;
         align-items: center;
         font-family: 'Open Sans', sans-serif;
@@ -61,7 +61,7 @@ background-size: cover;
         display: grid;
         flex-direction: column;
         color: white;
-        margin: 2rem 60rem 0 15rem;
+        margin: 0 60rem 0 15rem;
         padding-bottom: 8rem;
 
         .card__thumb,
@@ -79,6 +79,7 @@ background-size: cover;
             font-weight: 550;
             line-height: 9rem;
             line-height: 10rem;
+            margin-top: 5rem;
         }
         .buttona{
             text-decoration: none;
@@ -109,7 +110,33 @@ section.cat{
     .card__content {
         grid-area: 1/-1;
     }
-    @include h_bckg;
+    h2{
+        text-align: center;
+        padding: 6rem 0 0 0;
+        margin: 0;
+        font-size: 4rem;
+        font-family: 'Cinzel', serif;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+    h4{
+        text-align: center;
+        margin-top: 0;
+        font-size: 1.5rem;
+        font-weight: 100;
+        opacity: .8;
+        margin-bottom: 6rem;
+    }
+    h3{
+        opacity: .1;
+        font-size: 16rem;
+        color: $colord;
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+        float: left;
+        margin-right: 5rem;
+    }
     .choix{
         display: flex;
         flex-direction: row;
@@ -139,7 +166,7 @@ section .gallery{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 3rem;
     padding: 5rem;
         .ga{
             height: 25rem;
@@ -156,6 +183,7 @@ section .gallery{
             width: auto;
         }
 }
+
 section.about-us{
     margin-bottom: 10rem;
     .st{
@@ -166,7 +194,33 @@ section.about-us{
         grid-area: 1/-1;
         }
     }
-    @include h_bckg;
+    h2{
+        text-align: center;
+        padding: 6rem 0 0 0;
+        margin: 0;
+        font-size: 4rem;
+        font-family: 'Cinzel', serif;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+    h4{
+        text-align: center;
+        margin-top: 0;
+        font-size: 1.5rem;
+        font-weight: 100;
+        opacity: .8;
+        margin-bottom: 6rem;
+    }
+    h3{
+        opacity: .1;
+        font-size: 16rem;
+        color: $colord;
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+        float: left;
+        margin-right: 5rem;
+    }
     .aui{
         height: 12rem;
         width: auto;
@@ -176,7 +230,7 @@ section.about-us{
         display: flex;
         flex-direction: row;
         justify-content:center;
-        margin: 0 30rem 0 27rem;
+        margin: 0 27rem 0 27rem;
         align-items: center;
         gap: 5rem;
         .a{
@@ -206,14 +260,15 @@ section.about-us{
         }
     }
 }
+
 section.offer{
     background-color: $colorg;
     background-image: url(./img/our-menu/img2bg-our-menu.jpg), url(./img/our-menu/imgbg-our-menu.jpg);
-    background-position: left 45rem, right;
+    background-position: left 35rem, right;
     background-size: auto, 47rem 100%;
     background-size: nul, contain;
     background-repeat: no-repeat, no-repeat;
-    padding: 10rem 0;
+    padding: 5rem 0;
     .offer_title{
         display: grid;
         flex-direction: column;
@@ -278,14 +333,48 @@ section.offer{
     }
 
 }
+
 section.r_gallery{
     background-image: url(./img/our-menu/img2bg-our-menu.jpg);
     background-size: 14.1rem auto;
     background-repeat: no-repeat;
     background-position: top -31.1rem left;
+    padding-bottom: 5rem;
     .rg_title{
-        @include bckg_title;
-        @include h_bckg;
+        display: grid;
+        flex-direction: column;
+        .bckg_title,
+        .title {
+        grid-area: 1/-1;
+        }
+        padding-top: 4rem;
+        h2{
+            text-align: center;
+            padding: 6rem 0 0 0;
+            margin: 0;
+            font-size: 4rem;
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+        h4{
+            text-align: center;
+            margin-top: 0;
+            font-size: 1.5rem;
+            font-weight: 100;
+            opacity: .8;
+            margin-bottom: 6rem;
+        }
+        h3{
+            opacity: .1;
+            font-size: 16rem;
+            color: $colord;
+            font-weight: 400;
+            padding: 0;
+            margin: 0;
+            float: left;
+            margin-right: 5rem;
+        }
     }
     .rg_grid{
         display: grid;
@@ -293,7 +382,7 @@ section.r_gallery{
         justify-content:center;
         gap: 2rem;
         margin-right: 10rem;
-        padding-bottom: 2rem;
+        padding-bottom: 5rem;
         .a {
             grid-column: col 1 / span 2;
             grid-row: row 1;
@@ -329,6 +418,225 @@ section.r_gallery{
         font-weight: 800;
         align-items: center;
         text-align: center;
-        margin: 2rem 56rem;
+        margin: 2rem 52rem;
     }
+}
+
+section.our_chefs{
+    background-color: black;
+    padding: 1rem 0 10rem 0;
+    .full_title{
+        display: grid;
+        flex-direction: column;
+        .bckg_title,
+        .title {
+        grid-area: 1/-1;
+        }
+        padding-top: 4rem;
+        h2{
+            text-align: center;
+            padding: 6rem 0 0 0;
+            margin: 0;
+            font-size: 4rem;
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
+            margin-bottom: 0;
+            color: $colora;
+        }
+        h4{
+            text-align: center;
+            margin-top: 0;
+            font-size: 1.5rem;
+            font-weight: 100;
+            opacity: .8;
+            margin-bottom: 6rem;
+            color: $colora;
+        }
+        h3{
+            opacity: .1;
+            font-size: 16rem;
+            color: $colord;
+            font-weight: 400;
+            padding: 0;
+            margin: 0;
+            float: left;
+            margin-right: 5rem;
+            color: $colora;
+        }
+    }
+    .grid{
+        display: grid;
+        grid-template: auto /auto auto auto auto;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem 0 2rem 0;
+        img{
+            height: 30rem;
+            width: auto;
+        }
+
+    }
+}
+
+section.article_cards{
+    padding: 0 0 5rem 0;
+    .full_title{
+        display: grid;
+        flex-direction: column;
+        .bckg_title,
+        .title {
+        grid-area: 1/-1;
+        }
+        padding-top: 4rem;
+        h2{
+            text-align: center;
+            padding: 6rem 0 0 0;
+            margin: 0;
+            font-size: 4rem;
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+        h4{
+            text-align: center;
+            margin-top: 0;
+            font-size: 1.5rem;
+            font-weight: 100;
+            opacity: .8;
+            margin-bottom: 6rem;
+        }
+        h3{
+            opacity: .1;
+            font-size: 16rem;
+            color: $colord;
+            font-weight: 400;
+            padding: 0;
+            margin: 0;
+            float: left;
+            margin-right: 5rem;
+        }
+    }
+    .art{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        article{
+            width: 25.6rem;
+            background-color: $colorf;
+            height: 37rem;
+            p{
+                padding: 0 2rem 0 2rem;
+            }
+            .pa{
+                font-family: $fontc;
+                opacity: .5;
+            }
+            .pb{
+                font-family: $fonta;
+                font-size: 1.5rem;
+                padding-bottom: 1rem;
+            }
+            .buttonv{
+                text-decoration: none;
+                color: black;
+                background-color: white;
+                padding: 1rem 1rem 1rem 1rem;
+                border-radius: 0.5rem;
+                font-weight: 800;
+                align-items: center;
+                text-align: center;
+                margin: 0 2rem;
+            }
+        }
+    }
+    .brands{
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        justify-content: center;
+        align-items: center;
+        padding-top: 7rem;
+        img{
+            width: 8rem;
+        }
+    }
+}
+
+footer{
+    background-image: url("./img/footer/img-ng-footer.jpg");
+    background-repeat: no-repeat;
+    background-size: 110% 100%;
+    background-position: 50% -10%;
+    color: $colora;
+    padding: 5rem 0 3rem 0;
+    .footer_title{
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .footer_cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 7rem;
+        gap: 15rem;
+        .fcards{
+            justify-content: center;
+            padding-bottom: 0;
+
+            h4{
+                font-size: 2.5rem;
+                font-weight: 400;
+                margin-bottom: 2rem;
+            }
+            p{
+                font-size: 1.2rem;
+                color: rgba(255, 255, 255, 0.753);
+                font-family: $fontc;    
+            }
+            .subm{
+                display: flex;
+                flex-direction: row;
+                input[type=text] {
+                    border-radius: 0;
+                    border: none;
+                    font-size: 1.5rem;
+                    padding-left: 1rem;
+                  }
+                .fa-solid{
+                    border: none;
+                    padding: 1rem 1rem;
+                    background-color: $colord;
+                }
+            }
+        }
+        .n{
+            width: 20rem;
+        }
+    }
+    hr{
+        opacity: .5;
+        margin: 4rem 15rem;
+    }
+    .sp{
+        text-align: center;
+        position:relative;
+        top:-7rem;
+        img.spoon{
+            width: 6rem;
+            height: auto;
+
+        }
+    }
+    .copyright{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        top: -10rem;
+        margin: 0 15rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
 }
