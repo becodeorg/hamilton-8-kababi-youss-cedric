@@ -1,6 +1,10 @@
-@import "variables.scss";
-@import "mixin.scss";
-@import "extend.scss";
+@import "variables/variables.scss";
+@import "mixin/mixin.scss";
+@import "extend/extend.scss";
+@import "footer/footer.scss";
+@import "section.team/team.scss";
+@import "section.blog/blog_article.scss";
+@import "section.blog/brand.scss";;
 
 body{
     margin: 0;
@@ -332,100 +336,3 @@ section.r_gallery{
         margin: 2rem 56rem;
     }
 }
-
-
-footer{
-
-    height: 600px;
-    background-image: url(img/footer/img-ng-footer.jpg);
-    
-    .bloc1{
-        display: grid;
-        grid-template-columns: 15% 15% 35% 35%;
-        align-items: center;
-        justify-items: center;
-        justify-content: center;
-        gap:25px;
-        font-family: $fonth4;
-        color: $colorf;
-        
-        .about{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            ul{
-                list-style: none;
-
-                li{
-                
-                    a{
-
-                      @extend .liste;
-                    }
-                }
-            }
-        }
-        
-
-        .Facilities{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            
-            ul{
-                list-style: none;
-           
-
-                li{
-
-                    a{
-                        @extend .liste;
-                }
-            }
-        }
-    }
-
-
-    .Newsletters{
-            display: flex;
-            flex-direction: column;
-
-            .submit{
-
-                .button2{
-                    background-color: $colord;
-                }
-            }
-    }
-
-    .contact{
-        ul{
-            list-style: none;
-       
-
-        
-    }
-}
-}
-}
-.blog{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(202, 187, 155, .5);
-
-    .blog_article{
-
-        display: flex;
-
-        article{
-
-            background-color: $colord;
-            color: $colore;
-            font-family: $fonta;
-            font-size: 16px;
-        }
-    }
-}
-
