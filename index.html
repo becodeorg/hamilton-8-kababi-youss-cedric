@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Cinzel&family=Frank+Ruhl+Libre:wght@300;400&family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7b1b14c1ce.js" crossorigin="anonymous" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -84,10 +85,10 @@
                 </article> 
             </article>
         </section>
-        <section>
+        <section class="offer">
             <h2>TRY OUR SPECIAL OFFER</h2>
             <h4>Best foods for you & family</h4>
-            <grid>
+            <div class="offer__grid">
                 <div class="special-offer">
                     <h3>Raw Scaallops From Erquy</h3>
                     <h4>Candied jerusalem artichokes, truffle</h4>
@@ -128,18 +129,19 @@
                     <h4>Candied jerusalem artichokes, truffle</h4>
                     <prices>$89</prices>
                 </div>
-            </grid>
+            </div>
         </section>
-        <section>
-            <h2>Restaurant photo gallery</h2>
-            <h4>best food for you & family</h4>7
-            <div class="grille">
-                <img src="img/gallery/img1gallerybox.jpg">
-                <img src="img/gallery/img2gallerybox.jpg">
-                <img src="img/gallery/img3gallerybox.jpg">
-                <img src="img/gallery/img4gallerybox.jpg">
-                <img src="img/gallery/img5gallerybox.jpg">
-                <img src="img/gallery/img6gallerybox.jpg">
+        <section class="grille"></section>
+            <h1>GALLERY</h1>
+            <h2>RESTAURANTS PHOTOS GALLERY</h2>
+            <h4>best food for you & family</h4>
+            <div class="grille__gallery">
+                <img src="img/gallery/img1gallerybox.jpg" style="width: 600px;">
+                <img src="img/gallery/img2gallerybox.jpg" style="width: 300px;">
+                <img src="img/gallery/img3gallerybox.jpg" style="width: 300px;">
+                <img src="img/gallery/img4gallerybox.jpg" style="width: 300px;">
+                <img src="img/gallery/img5gallerybox.jpg" style="width: 300px;">
+                <img src="img/gallery/img6gallerybox.jpg" style="width: 600px;">
             </div>
             <a href="#">Vieuw more</a>
         </section>
@@ -154,36 +156,37 @@
                 <img src="/img/team/img4team.jpg">
             </div>
         </section>
-        <section>
+        <section class="blog">
+            <h1>OUR BLOG</h1>
             <h2>latest news & blog</h2>
             <h4>best food for you & family</h4>
             <article>
-                <img src="#">
+                <img src="img/blog/img3blohhome01.jpg">
                 <p></p>
                 <a href="#">read more</a>
             </article>
             <article>
-                <img src="#">
+                <img src="img/blog/img2blohhome01.jpg">
                 <p></p>
                 <a href="#">read more</a>
             </article>
             <article>
-                <img src="#">
+                <img src="img/blog/img1blohhome01.jpg">
                 <p></p>
                 <a href="#">read more</a>
             </article>
-            <div>
-                <i></i>
-                <i></i>
-                <i></i>
-                <i></i>
-                <i></i>
-                <i></i> 
+            <div class="brand">
+                <img src="img/brand/imgbrand3.png" alt="">
+                <img src="img/brand/imgbrand4.png" alt="">
+                <img src="img/brand/imgbrand5.png" alt="">
+                <img src="img/brand/imgbrand6.png" alt="">
+                <img src="img/brand/imgbrand1.png" alt="">
+                <img src="img/brand/imgbrand2.png" alt="">
             </div>
         </section>
         <footer>
              <div class="bloc1">
-            <div class="about">
+            <div class="about"><p>About</p>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Our Story</a></li>
@@ -192,7 +195,7 @@
                     <li><a href="">Food Lists</a></li>
                 </ul>
             </div>
-            <div class="Facilities">
+            <div class="Facilities"><p>Facilities</p>
                 <ul>
                     <li><a href="">The Fontus Spa</a></li>
                     <li><a href="">Experiences</a></li>
@@ -201,13 +204,13 @@
                     <li><a href="">Special Offers</a></li>
                 </ul>
             </div>
-            <div class="Newsletters">
+            <div class="Newsletters"><p>Newsletters</p>
                 <p>dolor sit amet consectetur adipiscing elit sed do
                     eisumod tempor incididunt labore et dolore</p>
                     <div class="submit">
                         <label for="uname"><b></b></label>
                              <input type="text" placeholder="Enter Username/email" name="uname" required>
-                             <button class="button2" type="submit">ok</button>
+                             <button class="button2" type="submit"><i class="fa-regular fa-arrow-right" style="color: #fafafa;"></i></button>
                     </div>
             </div>
             <div class="contact">

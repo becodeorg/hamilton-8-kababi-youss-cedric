@@ -27,12 +27,12 @@ h4 {
 }
 .Team h2 {
   font-family: " Frank Ruhl Libre";
+  font-style: italic;
   color: white;
   font-size: 24px;
 }
 .Team h4 {
   font-family: "open sans";
-  font-style: italic;
   color: white;
   font-size: 16px;
   margin: 0;
@@ -60,6 +60,90 @@ h4 {
     grid-template-rows: 25% 25% 25% 25%;
   }
 }
+.grille H1 {
+  font-family: "cinzel";
+  font-size: 120px;
+  color: #C8A96A;
+  position: relative;
+  opacity: 5%;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.grille H2 {
+  color: #1F1F1F;
+  font-family: " Frank Ruhl Libre";
+  font-size: 24px;
+}
+.grille H4 {
+  font-family: "open sans";
+  color: white;
+  font-size: 16px;
+  margin: 0;
+}
+.grille .grille__gallery img {
+  height: 400px;
+}
+
+.offer {
+  background-color: rgba(202, 187, 155, 0.5);
+}
+.offer .offer__grid {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 150px 150px 150px 150px;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  gap: 25px;
+  font-family: "open sans";
+}
+
+footer {
+  height: 600px;
+  background-image: url(img/footer/img-ng-footer.jpg);
+}
+footer .bloc1 {
+  display: grid;
+  grid-template-columns: 15% 15% 35% 35%;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  gap: 25px;
+  font-family: "open sans";
+  color: #FAF6F0;
+}
+footer .bloc1 .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .bloc1 .about ul {
+  list-style: none;
+}
+footer .bloc1 .Facilities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .bloc1 .Facilities ul {
+  list-style: none;
+}
+footer .bloc1 .Newsletters {
+  display: flex;
+  flex-direction: column;
+}
+footer .bloc1 .Newsletters .submit .button2 {
+  background-color: #C8A96A;
+}
+footer .bloc1 .contact ul {
+  list-style: none;
+}
+
+.liste, footer .bloc1 .about ul li a, footer .bloc1 .Facilities ul li a {
+  text-decoration: none;
+  color: #FAF6F0;
+}
+
 body {
   margin: 0;
 }
