@@ -77,13 +77,7 @@ background-size: cover;
             width: 10rem;
             padding: 3rem 0 0 27rem;
         }
-        h1{
-            font-size: 9rem;
-            font-family: 'Cinzel', serif;
-            font-weight: 550;
-            line-height: 9rem;
-            line-height: 10rem;
-        }
+        
         .buttona{
             text-decoration: none;
             color: white;
@@ -211,6 +205,8 @@ section.about-us{
     }
 }
 section.offer{
+    @include h_bckg;
+    @include bckg_title;
     background-color: $colorg;
     background-image: url(./img/our-menu/img2bg-our-menu.jpg), url(./img/our-menu/imgbg-our-menu.jpg);
     background-position: left 45rem, right;
@@ -287,10 +283,10 @@ section.r_gallery{
     background-size: 14.1rem auto;
     background-repeat: no-repeat;
     background-position: top -31.1rem left;
-    .rg_title{
-        @include bckg_title;
-        @include h_bckg;
-    }
+    
+    @include bckg_title;
+    @include h_bckg;
+    
     .rg_grid{
         display: grid;
         grid-template: auto auto / auto auto auto auto;

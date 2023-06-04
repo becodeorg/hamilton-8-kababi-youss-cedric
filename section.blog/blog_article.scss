@@ -1,18 +1,35 @@
 .blog{
+    @include h_bckg;
+    @include bckg_title;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     .blog_article{ 
+
         display: flex;
 
         article{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-            img{}
+
 
             p{
-                display: block;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 color: $colore;
+                margin: 3rem;
+                font-family: $fonta;
+            }
+            a{
+                background-color: $colorg;
+                color: $colore;
+                text-decoration: none;
+                font-family: $fontc;
+            
             }
         }
     }

@@ -44,17 +44,110 @@ footer .bloc1 .contact ul {
   list-style: none;
 }
 
+.Team {
+  display: flex;
+  display: grid;
+  flex-direction: column;
+  color: #FAF6F0;
+  background-image: url(img/our-chefs/imgbg-ourchefs.jpg);
+  height: 800px;
+  width: 100%;
+}
+.Team .bckg_title,
+.Team .title {
+  grid-area: 1/-1;
+}
+.Team h2 {
+  text-align: center;
+  padding: 6rem 0 0 0;
+  margin: 0;
+  font-size: 4rem;
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.Team h4 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 100;
+  opacity: 0.8;
+  margin-bottom: 6rem;
+}
+.Team h1 {
+  opacity: 0.1;
+  font-size: 16rem;
+  color: #C8A96A;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  float: left;
+  margin-right: 5rem;
+}
+.Team .Team__gallerie {
+  display: flex;
+  justify-content: center;
+}
+
 .blog {
+  display: grid;
+  flex-direction: column;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.blog h2 {
+  text-align: center;
+  padding: 6rem 0 0 0;
+  margin: 0;
+  font-size: 4rem;
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.blog h4 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 100;
+  opacity: 0.8;
+  margin-bottom: 6rem;
+}
+.blog h1 {
+  opacity: 0.1;
+  font-size: 16rem;
+  color: #C8A96A;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  float: left;
+  margin-right: 5rem;
+}
+.blog .bckg_title,
+.blog .title {
+  grid-area: 1/-1;
+}
 .blog .blog_article {
   display: flex;
 }
+.blog .blog_article article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .blog .blog_article article p {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #1F1F1F;
+  margin: 3rem;
+  font-family: "Cinzel", serif;
+}
+.blog .blog_article article a {
+  background-color: #FAF7F0;
+  color: #1F1F1F;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
 }
 .blog .brand {
   display: flex;
@@ -126,13 +219,6 @@ header div.accueil img {
   width: 10rem;
   padding: 3rem 0 0 27rem;
 }
-header div.accueil h1 {
-  font-size: 9rem;
-  font-family: "Cinzel", serif;
-  font-weight: 550;
-  line-height: 9rem;
-  line-height: 10rem;
-}
 header div.accueil .buttona {
   text-decoration: none;
   color: white;
@@ -176,7 +262,7 @@ section.cat h4 {
   opacity: 0.8;
   margin-bottom: 6rem;
 }
-section.cat h3 {
+section.cat h1 {
   opacity: 0.1;
   font-size: 16rem;
   color: #C8A96A;
@@ -260,7 +346,7 @@ section.about-us h4 {
   opacity: 0.8;
   margin-bottom: 6rem;
 }
-section.about-us h3 {
+section.about-us h1 {
   opacity: 0.1;
   font-size: 16rem;
   color: #C8A96A;
@@ -308,6 +394,8 @@ section.about-us .serv .b a {
 }
 
 section.offer {
+  display: grid;
+  flex-direction: column;
   background-color: #FAF7F0;
   background-image: url(./img/our-menu/img2bg-our-menu.jpg), url(./img/our-menu/imgbg-our-menu.jpg);
   background-position: left 45rem, right;
@@ -315,6 +403,37 @@ section.offer {
   background-size: nul, contain;
   background-repeat: no-repeat, no-repeat;
   padding: 10rem 0;
+}
+section.offer h2 {
+  text-align: center;
+  padding: 6rem 0 0 0;
+  margin: 0;
+  font-size: 4rem;
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+section.offer h4 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 100;
+  opacity: 0.8;
+  margin-bottom: 6rem;
+}
+section.offer h1 {
+  opacity: 0.1;
+  font-size: 16rem;
+  color: #C8A96A;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  float: left;
+  margin-right: 5rem;
+}
+section.offer .bckg_title,
+section.offer .title {
+  grid-area: 1/-1;
 }
 section.offer .offer_title {
   display: grid;
@@ -384,16 +503,14 @@ section.r_gallery {
   background-size: 14.1rem auto;
   background-repeat: no-repeat;
   background-position: top -31.1rem left;
-}
-section.r_gallery .rg_title {
   display: grid;
   flex-direction: column;
 }
-section.r_gallery .rg_title .bckg_title,
-section.r_gallery .rg_title .title {
+section.r_gallery .bckg_title,
+section.r_gallery .title {
   grid-area: 1/-1;
 }
-section.r_gallery .rg_title h2 {
+section.r_gallery h2 {
   text-align: center;
   padding: 6rem 0 0 0;
   margin: 0;
@@ -402,7 +519,7 @@ section.r_gallery .rg_title h2 {
   font-weight: 400;
   margin-bottom: 0;
 }
-section.r_gallery .rg_title h4 {
+section.r_gallery h4 {
   text-align: center;
   margin-top: 0;
   font-size: 1.5rem;
@@ -410,7 +527,7 @@ section.r_gallery .rg_title h4 {
   opacity: 0.8;
   margin-bottom: 6rem;
 }
-section.r_gallery .rg_title h3 {
+section.r_gallery h1 {
   opacity: 0.1;
   font-size: 16rem;
   color: #C8A96A;
