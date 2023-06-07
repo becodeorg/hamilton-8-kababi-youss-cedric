@@ -360,8 +360,6 @@ section.offer{
 
 
 section.r_gallery{
-  
-    
     @include bckg_title;
     @include h_bckg;
   
@@ -370,12 +368,12 @@ section.r_gallery{
     }
 
     .rg_grid{
-       
-    
+        display: flex;
+
     .rg_grid_blc1{
         display: grid;
         justify-content:center;
-        gap: 28px;
+        grid-gap: 28px;
         margin-right: 80px;
         padding-bottom: 24px;
 
@@ -396,28 +394,28 @@ section.r_gallery{
           }
         }
 
-    .rg_grid_bloc2{
+    .rg_grid_blc2{
             display: grid;
             justify-content:center;
             gap: 28px;
             margin-right: 80px;
             padding-bottom: 24px;
-            .b{        
+    
+            .f {        
                 grid-column: col 1 / span 2;
                 grid-row: row 1; 
               }
               
-            .c {
+            .b {
                 grid-column: col 1 / span 1 ;
                 grid-row: row 2 ;
               }
-            .f {
+            .c {
                 grid-column: col 2 / span 1;
                 grid-row: row 2;
               }
-        
-    }
-}
+            }
+        }
 
     .button{
         text-decoration: none;
@@ -431,13 +429,18 @@ section.r_gallery{
         text-align: center;
         margin: 28px 620px;
     }
-
 }
+
+
 @media (max-width: 768px) {
+    .rg_grid{
+        display: flex;
+        flex-direction: column;
     
     }
     .button {
       margin: 28px auto;
     }
+}
   
   

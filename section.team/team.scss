@@ -21,6 +21,18 @@
     }
 }
 @media (max-width: 768px) {
+    .Team{
+     
+            @include bckg_title;
+            @include h_bckg;
+            color: $colorf;
+            background-image: url(img/our-chefs/imgbg-ourchefs.jpg);
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            
+    
+        
     .Team__gallerie{
       flex-direction: column;
       justify-content: center;
@@ -32,3 +44,4 @@
     }
     }
   }
+}

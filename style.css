@@ -136,13 +136,54 @@ footer .bloc2 .social-media ul li {
 }
 
 @media (max-width: 768px) {
-  .Team__gallerie {
+  .Team {
+    display: grid;
+    flex-direction: column;
+    color: #FAF6F0;
+    background-image: url(img/our-chefs/imgbg-ourchefs.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+  .Team .bckg_title,
+  .Team .title {
+    grid-area: 1/-1;
+  }
+  .Team h2 {
+    text-align: center;
+    padding: 50px 0 0 0;
+    margin: 0;
+    font-size: 48px;
+    font-family: "Cinzel", serif;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: grey;
+  }
+  .Team h4 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: 100;
+    opacity: 0.8;
+    color: grey;
+  }
+  .Team h1 {
+    opacity: 0.1;
+    font-size: 120px;
+    color: #C8A96A;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    float: left;
+    margin-right: 80px;
+  }
+  .Team .Team__gallerie {
     flex-direction: column;
     justify-content: center;
     gap: 50px;
     margin-bottom: 80px;
   }
-  .Team__gallerie img {
+  .Team .Team__gallerie img {
     width: auto;
     height: auto;
   }
@@ -697,10 +738,13 @@ section.r_gallery h1 {
 section.r_gallery h1, section.r_gallery h2 {
   margin-top: 50px;
 }
+section.r_gallery .rg_grid {
+  display: flex;
+}
 section.r_gallery .rg_grid .rg_grid_blc1 {
   display: grid;
   justify-content: center;
-  gap: 28px;
+  grid-gap: 28px;
   margin-right: 80px;
   padding-bottom: 24px;
 }
@@ -716,22 +760,22 @@ section.r_gallery .rg_grid .rg_grid_blc1 .e {
   grid-column: col 2/span 1;
   grid-row: row 2;
 }
-section.r_gallery .rg_grid .rg_grid_bloc2 {
+section.r_gallery .rg_grid .rg_grid_blc2 {
   display: grid;
   justify-content: center;
   gap: 28px;
   margin-right: 80px;
   padding-bottom: 24px;
 }
-section.r_gallery .rg_grid .rg_grid_bloc2 .b {
+section.r_gallery .rg_grid .rg_grid_blc2 .f {
   grid-column: col 1/span 2;
   grid-row: row 1;
 }
-section.r_gallery .rg_grid .rg_grid_bloc2 .c {
+section.r_gallery .rg_grid .rg_grid_blc2 .b {
   grid-column: col 1/span 1;
   grid-row: row 2;
 }
-section.r_gallery .rg_grid .rg_grid_bloc2 .f {
+section.r_gallery .rg_grid .rg_grid_blc2 .c {
   grid-column: col 2/span 1;
   grid-row: row 2;
 }
@@ -748,8 +792,14 @@ section.r_gallery .button {
   margin: 28px 620px;
 }
 
-.button {
-  margin: 28px auto;
+@media (max-width: 768px) {
+  .rg_grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .button {
+    margin: 28px auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
