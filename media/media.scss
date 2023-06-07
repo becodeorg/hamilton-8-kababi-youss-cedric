@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+    // Styles pour les écrans de taille tablette et inférieure
+    .footer-menu {
+      display: none; // Cachez la liste ul par défaut sur les écrans de taille tablette et inférieure
+    }
+  }
+  .footer-menu {
+    @media (max-width: 768px) {
+      display: none; // Cachez la liste ul par défaut sur les écrans de taille tablette et inférieure
+    }
+  
+    .menu-open & {
+      display: block; // Affichez la liste ul lorsque le menu est ouvert
+    }
+  }

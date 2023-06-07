@@ -9,29 +9,36 @@
 @mixin h_bckg{
     h2{
         text-align: center;
-        padding: 6rem 0 0 0;
+        padding: 50px 0 0 0;
         margin: 0;
-        font-size: 4rem;
+        font-size: 48px;
         font-family: 'Cinzel', serif;
         font-weight: 400;
         margin-bottom: 0;
+        color: $colorh;
     }
     h4{
         text-align: center;
         margin-top: 0;
-        font-size: 1.5rem;
+        font-size: 24px;
         font-weight: 100;
         opacity: .8;
-        margin-bottom: 6rem;
+        color: $colorh;
     }
     h1{
         opacity: .1;
-        font-size: 16rem;
+        font-size: 120px;
         color: $colord;
         font-weight: 400;
         padding: 0;
         margin: 0;
         float: left;
-        margin-right: 5rem;
+        margin-right: 80px;
     }
+}
+
+@mixin ref{
+    .ref{
+    font-size: 24px;
+}
 }

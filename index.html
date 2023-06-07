@@ -9,11 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Frank+Ruhl+Libre&family=Open+Sans&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <script src="media/action.js" type="text/javascript" defer></script>
     <title>Document</title>
 </head>
 <body>
 <header>
-    <navbar>
+    <nav class="navbar">
         <img src="./img/logo/logo.png">
         <ul>
             <li>Home</li>
@@ -24,16 +25,18 @@
         </ul>
         <p><i class="fa-solid fa-phone-flip"></i>+012(345)6789</p>
         <a href="https://google.com" class="buttonn">Book a table<i class="fa-solid fa-arrow-right"></i></a>
-    </navbar>
+    </nav>
     <div class="accueil">
         <div class="card__thumb">
             <img src="img/slider/img_bg2.png" alt="">
         </div>
         <div class="card__content">
             <h1>BEST QUALITY FOODS</h1>
-            <a href="https://google.com" class="buttona">EXPLORE OUR MENU <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://google.com" class="buttona">EXPLORE OUR MENU<i class="fa-solid fa-arrow-right"></i></a>
         </div>
     </div>
+    
+    
 </header>
 <main>
     <section class="cat">
@@ -46,46 +49,46 @@
         </div>
         <div class="choix">
             <div class="category">
-                <img src="./icon/burger.png" alt="">
+                <img src="img/icon_about_us/burger_blanc.png" alt="">
                 <p>Cheeseburger</p>
                 <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="category">
-                <img src="./icon/burger.png" alt="">
-                <p>Cheeseburger</p>
+                <img src="img/icon_about_us/cafe_blanc.png" alt="">
+                <p>Café</p>
                 <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="category">
-                <img src="./icon/burger.png" alt="">
-                <p>Cheeseburger</p>
+                <img src="img/icon_about_us/cocktail_blanc.png" alt="">
+                <p>Cocktail</p>
                 <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="category">
-                <img src="./icon/burger.png" alt="">
-                <p>Cheeseburger</p>
+                <img src="img/icon_about_us/poulet_blanc.png" alt="">
+                <p>Chicken</p>
                 <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="category">
-                <img src="./icon/burger.png" alt="">
-                <p>Cheeseburger</p>
+                <img src="img/icon_about_us/crevette_blache.png" alt="">
+                <p>Crustacés</p>
                 <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="category">
-                <img src="./icon/burger.png" alt="">
-                <p>Cheeseburger</p>
+                <img src="img/icon_about_us/pizza-slide-blanc.png" alt="">
+                <p>Pizzas</p>
                 <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
     <section>
         <div class="gallery">
-            <img src="./img/gallery/imgfood1.png" alt="" class="ga">
-            <img src="./img/gallery/imgfood2.jpg" alt="" class="gb">
-            <img src="./img/gallery/imgfood3.png" alt="" class="gc">
+            <div class="ga"><img src="./img/gallery/imgfood1.png" alt="" class="ga"></div>
+            <div class="gb" ><img src="./img/gallery/imgfood2.jpg" alt="" class="gb"></div>
+            <div class="gc"><img src="./img/gallery/imgfood3.png" alt="" class="gc"></div>
+        
         </div>
     </section>
     <section class="about-us">
-        <div class="st">
             <div class="bckg_title">
                 <span><h1>ABOUT US</h1><img src="./img/about-us/iconbgabout.png" alt="" class="aui"></span>
             </div>
@@ -93,7 +96,7 @@
                 <h2>WHY CHOOSE US</h2>
                 <h4>Best foods for you & family</h4>
             </div>
-        </div>
+        
         <div class="serv">
             <div class="a">
                 <img src="./img/about-us/img_aboutus_home1.jpg" alt="">
@@ -102,9 +105,10 @@
                 <p>
                 It to make a type specimen book. It to make a type specimen book. It to make a type specimen book. It to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
                 </p>
-                <a href="https://google.com" class="buttonb">DISCOVER MORE <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="https://google.com" class="buttonb">DISCOVER MORE<i class="fa-solid fa-arrow-right"></i></a>
             </div>
-        </div>    
+        </div> 
+        </div>   
     </section>
     <section class="offer">
             <div class="bckg_title">
@@ -243,25 +247,27 @@
     </section>
     <footer>
         <div class="bloc1">
-       <div class="about"><p>About</p>
-           <ul>
+       <div class="about"><p clas="ref" style="font-size: 24px;">About</p>
+           <ul class="footer-menu">
                <li><a href="">Home</a></li>
                <li><a href="">Our Story</a></li>
                <li><a href="">The Setting</a></li>
                <li><a href="">The Suites</a></li>
                <li><a href="">Food Lists</a></li>
            </ul>
+           <button class="menu-toggle">Menu</button>
        </div>
-       <div class="Facilities"><p>Facilities</p>
-           <ul>
+       <div class="Facilities"><p clas="ref" style="font-size: 24px;">Facilities</p>
+           <ul class="footer-menu">
                <li><a href="">The Fontus Spa</a></li>
                <li><a href="">Experiences</a></li>
                <li><a href="">Private Functions</a></li>
                <li><a href="">Gallery, Events</a></li>
                <li><a href="">Special Offers</a></li>
            </ul>
+           <button class="menu-toggle">Menu</button>
        </div>
-       <div class="Newsletters"><p>Newsletters</p>
+       <div class="Newsletters"><p clas="ref"style="font-size: 24px;">Newsletters</p>
            <p>dolor sit amet consectetur adipiscing elit sed do
                eisumod tempor incididunt labore et dolore</p>
                <div class="submit">
@@ -270,28 +276,30 @@
                         <button class="button2" type="submit"><i class="fa-regular fa-arrow-right" style="color: #fafafa;"></i></button>
                </div>
        </div>
-       <div class="contact">
-           <ul>
+       <div class="contact"><p clas="ref" style="font-size: 24px;">Contact</p>
+           <ul class="footer-menu">
                <li><img src=""><p>56 Main Street, D-Block, 2nd Floor, Melbourne, Australia</p></li>
                <li><img src=""><p>Support@gmail.com</p></li>
                <li><img src=""><p>+012 (345) 67 899</p></li>
                <li><img src=""><p>08 am - 06 pm</p></li>
            </ul>
+           <button class="menu-toggle">Menu</button>
        </div>
        </div>
        <div class="bloc2">
        <div class="copyright">
-        <p>copyright<i class="fa-light fa-copyright" style="color: #000000;"></i>2021 The Kababi- Restaurant HTML Template. Designed by Youssef & Cédric</p>
+        <p>copyright<i class="fa-light fa-copyright" style="color: #000000;"></i>2021 The Kababi- Restaurant HTML <span style="color: #C8A96A;">Template</span>. Designed by Youssef & Cédric!</p>
         <img src="img/footer/iconup@2x.png">
 
        </div>
        <div class="social-media">
            <ul>
                <li><a href="https://facebook.com"><i class="fa-brands fa-facebook" style="color: #b4b625;"></i></a></li>
-               <li><a href="https://twitter.com"><i class="fa-brands fa-twitter" style="color: #5f6163;"></i></div></a></li>
+               <li><a href="https://twitter.com"><i class="fa-brands fa-twitter" style="color: #5f6163;"></i></a></li>
                <li><a href="https://youtube.com"><i class="fa-brands fa-youtube" style="color: #5f6163;"></i></a></li>
-               <li><a href="https://linkedin.com"></a><i class="fa-brands fa-linkedin" style="color: #5f6163;"></i></li>
+               <li><a href="https://linkedin.com"><i class="fa-brands fa-linkedin" style="color: #5f6163;"></i></a></li>
            </ul>
+       </div>
        </div>
    </footer>
 </body>

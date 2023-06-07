@@ -2,32 +2,37 @@ footer{
 
     height: 600px;
     background-image: url(img/footer/img-ng-footer.jpg);
+    p{
+        font-family: $fontc;
+        color: $colorh;
+    
+    .ref{
+        color: $colorg;
+    }
+}
     
     .bloc1{
-        display: grid;
-        grid-template-columns: 15% 15% 35% 35%;
-        align-items: center;
-        justify-items: center;
-        justify-content: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
         gap:25px;
         font-family: $fonth4;
         color: $colorf;
+        a{
+            @extend .liste ;
+            color:$colorh
+        }
+
         
         .about{
             display: flex;
             flex-direction: column;
             align-items: center;
-
+            
             ul{
                 list-style: none;
 
-                li{
-                
-                    a{
-
-                      @extend .liste;
-                    }
-                }
+               
             }
         }
         
@@ -41,12 +46,7 @@ footer{
                 list-style: none;
            
 
-                li{
-
-                    a{
-                        @extend .liste;
-                }
-            }
+              
         }
     }
 
@@ -72,4 +72,44 @@ footer{
     }
 }
 }
+
+    .bloc2{
+        display: flex;
+        justify-content: space-between;
+
+
+        .copyright{
+            display: flex;
+
+           
+
+                .fa-light{
+                    color: $colorh;
+            }
+        
+        img{
+            height: 50px;
+            width: 50px;
+        }
+    }
+    .social-media{
+        width: 30vw;
+
+        ul{
+            display: flex;
+            list-style: none;
+
+            li{
+                margin:10px;
+            }
+        }
+    }
 }
+}
+.menu-toggle {
+    display: none; // Masquer le bouton par défaut
+    
+    @media (max-width: 768px) {
+      display: block; // Afficher le bouton sur les écrans de taille tablette et inférieure
+    }
+  }
