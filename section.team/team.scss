@@ -4,12 +4,31 @@
         @include h_bckg;
         color: $colorf;
         background-image: url(img/our-chefs/imgbg-ourchefs.jpg);
-        height: 800px;
-        width: 100%;
+        background-size: cover;
+        
 
     .Team__gallerie{
         display: flex;
         justify-content: center;
+        gap: 50px;
+        margin-bottom: 80px;
+
+        img{
+            width: auto;
+            height: auto;
+        }
 
     }
 }
+@media (max-width: 768px) {
+    .Team__gallerie{
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+      margin-bottom: 80px;
+      img{
+        width: auto;
+        height: auto;
+    }
+    }
+  }

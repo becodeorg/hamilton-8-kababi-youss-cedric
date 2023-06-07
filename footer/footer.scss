@@ -27,10 +27,11 @@ footer{
         .about{
             display: flex;
             flex-direction: column;
-            align-items: center;
+            
             
             ul{
                 list-style: none;
+                padding: 0;
 
                
             }
@@ -54,6 +55,7 @@ footer{
     .Newsletters{
             display: flex;
             flex-direction: column;
+            width: 20%;
 
             .submit{
 
@@ -61,12 +63,18 @@ footer{
                     background-color: $colord;
                 }
             }
-    }
+        }
+            @media (max-width: 768px) {
+                .Newsletter{
+                display: none; // Cachez la liste ul par défaut sur les écrans de taille tablette et inférieure
+              }
+            }
+    
 
     .contact{
         ul{
             list-style: none;
-       
+            padding: 0;
 
         
     }
@@ -106,10 +114,3 @@ footer{
     }
 }
 }
-.menu-toggle {
-    display: none; // Masquer le bouton par défaut
-    
-    @media (max-width: 768px) {
-      display: block; // Afficher le bouton sur les écrans de taille tablette et inférieure
-    }
-  }

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Frank+Ruhl+Libre&family=Open+Sans&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <script src="media/action.js" type="text/javascript" defer></script>
+    <script src="action.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -21,11 +21,30 @@
             <li>About</li>
             <li>Page</li>
             <li>Shop</li>
-            <li>contact</li>
+            <li>Contact</li>
         </ul>
         <p><i class="fa-solid fa-phone-flip"></i>+012(345)6789</p>
         <a href="https://google.com" class="buttonn">Book a table<i class="fa-solid fa-arrow-right"></i></a>
     </nav>
+    <div id="mySidenav" class="sidenav">
+        <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="https://google.com" class="buttonn">Book a table<i class="fa-solid fa-arrow-right"></i></a></li>
+            </ul>
+    </div>
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </span>
+        </a>
     <div class="accueil">
         <div class="card__thumb">
             <img src="img/slider/img_bg2.png" alt="">
@@ -49,32 +68,32 @@
         </div>
         <div class="choix">
             <div class="category">
-                <img src="img/icon_about_us/burger_blanc.png" alt="">
+                <img src="img/icon_about_us/burger_dore.png" alt="">
                 <p>Cheeseburger</p>
                 <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="category">
-                <img src="img/icon_about_us/cafe_blanc.png" alt="">
+                <img src="img/icon_about_us/cafe_dore.png" alt="">
                 <p>Café</p>
                 <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="category">
-                <img src="img/icon_about_us/cocktail_blanc.png" alt="">
+                <img src="img/icon_about_us/cocktail_dore.png" alt="">
                 <p>Cocktail</p>
                 <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="category">
-                <img src="img/icon_about_us/poulet_blanc.png" alt="">
+                <img src="img/icon_about_us/poulet_dore.png" alt="">
                 <p>Chicken</p>
                 <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="category">
-                <img src="img/icon_about_us/crevette_blache.png" alt="">
+                <img src="img/icon_about_us/crevette_dore.png" alt="">
                 <p>Crustacés</p>
                 <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="category">
-                <img src="img/icon_about_us/pizza-slide-blanc.png" alt="">
+                <img src="img/icon_about_us/pizaa-slide-dore.png" alt="">
                 <p>Pizzas</p>
                 <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
@@ -111,6 +130,7 @@
         </div>   
     </section>
     <section class="offer">
+        
             <div class="bckg_title">
                 <h1>OUR MENU US</h1>
             </div>
@@ -176,6 +196,7 @@
                 <p class="price">89$</p>
             </div>
         </div>
+        <img src="img/our-menu/img2bg-our-menu.jpg">
     </section>
     <section class="r_gallery">
             <div class="bckg_title">
@@ -186,13 +207,18 @@
                 <h4>Best foods for you & family</h4>
             </div>
         <div class="rg_grid">
+            <div class="rg_grid_blc1">
                 <div class="a"><img src="./img/gallery/img1gallerybox.jpg" alt=""></div>
-                <div class="b"><img src="./img/gallery/img2gallerybox.jpg" alt=""></div>
-                <div class="c"><img src="./img/gallery/img3gallerybox.jpg" alt=""></div>
                 <div class="d"><img src="./img/gallery/img4gallerybox.jpg" alt=""></div>
                 <div class="e"><img src="./img/gallery/img5gallerybox.jpg" alt=""></div>
+            </div>
+                
+            <div class="rg_grid_bloc2">
+                <div class="b"><img src="./img/gallery/img2gallerybox.jpg" alt=""></div>
+                <div class="c"><img src="./img/gallery/img3gallerybox.jpg" alt=""></div>
                 <div class="f"><img src="./img/gallery/img6gallerybox.jpg" alt=""></div>
             </div>
+        </div>
             <a href="https://google.com" class="button">VIEW MORE PHOTOS <i class="fa-solid fa-arrow-right"></i></a>
 
     </section>

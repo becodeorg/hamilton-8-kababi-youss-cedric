@@ -4,8 +4,7 @@
 @import "footer/footer.scss";
 @import "section.team/team.scss";
 @import "section.blog/blog_article.scss";
-@import "section.blog/brand.scss";
-@import "media/media.scss";
+
  
 *{
    
@@ -27,8 +26,65 @@ header{
     linear-gradient(90deg, rgba(0,0,0,1) 41%, rgba(0,212,255,0) 100%),
     url("img/slider/img_bg_slider_home01.jpg");   
     background-size: cover;
+      /* Sidenav menu */
+  .sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: $colord;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+  }
+  
+  /* Sidenav menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+.sidenav a:hover {
+    color: #111;
+  }
+  
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Active class */
+.sidenav.active {
+    left: 0;
+  }
+  
+/* Close btn */
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
 
+  /* Icône burger */
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color:  $colord;
+    margin: 6px 0;
+  }
+.navbar {
+    display: none; /* Masquer la barre de navigation par défaut */
+  }
 
+  @media (min-width: 765px){
     .navbar{
         color: $colora;
         display: flex;
@@ -72,6 +128,17 @@ header{
         }
         }
     }
+  
+    .sidenav{
+      display: none;
+      }
+    .burger-icon span{
+      display: none;
+      }
+    }
+
+
+    
     div.accueil{
         @include h_bckg;
         width: 50%;
@@ -112,8 +179,7 @@ header{
     @include h_bckg;
     @include bckg_title;
 
-    background-color: $colorc;
-    // background-image: url("img/banner/imgbgcategory.jpg");
+    background-image: radial-gradient(circle, rgba(75,104,255,1) 0%, rgba(200,169,106,0.1) 0%), url("./img/banner/imgbgcategory.jpg");
     opacity: 80%;
     text-align: center;
     background-size: cover;
@@ -129,7 +195,7 @@ header{
         justify-content: center;
         .category{
             margin-top: 36px;
-            background-color: $colorb;
+            background-color: white;
             padding: 24px;
             color: $colord;
             font-size: 28px;
@@ -185,8 +251,9 @@ section.about-us{
 
     .aui{
         height: 180px;
-        width: auto;
-        padding: 0 80%;
+        position: relative;
+        left: 25rem;
+        top: 2rem;
     }
     .serv{
         display: flex;
@@ -233,13 +300,17 @@ section.offer{
     @include h_bckg;
     @include bckg_title;
     background-color: $colorg;
-    background-image: url(./img/our-menu/img2bg-our-menu.jpg), url(./img/our-menu/imgbg-our-menu.jpg);
-    background-position: left 50% , right;
-    background-size: 30%, 30% 100%;
-    background-repeat: no-repeat, no-repeat;
-   
-    background-position: left calc(50% - 50vh), right;
-        
+    background-image: url(./img/our-menu/imgbg-our-menu.jpg);
+    background-position: right 50%;
+    background-size: 30% 100% ;
+    background-repeat: no-repeat;
+    height: 1000px;
+
+    img{
+        position: relative;
+        bottom: 70%;
+        z-index: 1;
+    }
       
     
         
@@ -252,22 +323,36 @@ section.offer{
         column-gap: 40px;
         padding-top: 28px;
         margin-bottom: 50px;
+        z-index: 2;
         div.card{
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-around;
             padding: 6px 12px;
-            gap: 70px;
+            gap: 50px;
             background-color: $colora;
 
             font-family: $fonta;
             border-radius: 28px;
             font-weight: 500;
-            
+             
+            &:hover{
+                border: dotted $colord;
+               
+            }
+            .m1{
+                    font-size: 24px;
+                    color:$colorh;
+            }
+            .m2{
+                font-size: 18px;
+                color: $colorh;
+                opacity: 70%;
+            }
             .price{
                 color: $colord;
-                font-size: 48px;
+                font-size: 36px;
             }
         }
     }
@@ -279,41 +364,61 @@ section.r_gallery{
     
     @include bckg_title;
     @include h_bckg;
-    
+  
+    h1,h2{
+        margin-top: 50px;
+    }
+
     .rg_grid{
-        width: 90%;
+       
+    
+    .rg_grid_blc1{
         display: grid;
         justify-content:center;
         gap: 28px;
         margin-right: 80px;
         padding-bottom: 24px;
+
         
-        .a {
+        
+        .a {        
             grid-column: col 1 / span 2;
-            grid-row: row 1;
-            
+            grid-row: row 1; 
           }
-          .b {
-            grid-column: col 3 / span 1 ;
-            grid-row: row 1;
-          }
-          .c {
-            grid-column: col 4 / span 1 ;
-            grid-row: row 1 ;
-          }
-          .d {
+          
+        .d {
             grid-column: col 1 / span 1 ;
             grid-row: row 2 ;
           }
-          .e {
+        .e {
             grid-column: col 2 / span 1;
             grid-row: row 2;
           }
-          .f{
-            grid-column: col 3 / span 2;
-            grid-row: row 2;
-          }
+        }
+
+    .rg_grid_bloc2{
+            display: grid;
+            justify-content:center;
+            gap: 28px;
+            margin-right: 80px;
+            padding-bottom: 24px;
+            .b{        
+                grid-column: col 1 / span 2;
+                grid-row: row 1; 
+              }
+              
+            .c {
+                grid-column: col 1 / span 1 ;
+                grid-row: row 2 ;
+              }
+            .f {
+                grid-column: col 2 / span 1;
+                grid-row: row 2;
+              }
+        
     }
+}
+
     .button{
         text-decoration: none;
         color: black;
@@ -326,4 +431,13 @@ section.r_gallery{
         text-align: center;
         margin: 28px 620px;
     }
+
 }
+@media (max-width: 768px) {
+    
+    }
+    .button {
+      margin: 28px auto;
+    }
+  
+  
