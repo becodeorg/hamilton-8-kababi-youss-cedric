@@ -6,7 +6,7 @@ A brief description of what this project does and who it's for
 
 ## Authors
 
-- [@Cedric](https://www.github.com/https://github.com/cedricwietkin)
+- [@Cedric](https://github.com/cedricwietkin)
 - [@Youssef](https://github.com/blyssco)
 
 
